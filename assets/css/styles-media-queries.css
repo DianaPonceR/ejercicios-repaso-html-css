@@ -1,0 +1,25 @@
+body {
+    color: red;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.subtitle {
+    font-size: 2rem;
+}
+
+@media (orientation: portrait) and (max-width: 600px) {
+    body {
+        background-color: chocolate;
+        color: white;
+    }
+}
+
+@media all and (max-width: 500px) {
+    body {
+        color: blue;
+    }
+}
+

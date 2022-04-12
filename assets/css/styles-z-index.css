@@ -1,0 +1,23 @@
+.box {
+    border: 2px solid black;
+    display: block;
+    position: absolute;
+}
+
+.box.blue {
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+}
+
+.box.red {
+    background-color: red;
+    width: 250px;
+    height: 100px;
+}
+
+.box.yellow {
+    background-color: yellow;
+    width: 129px;
+    height: 78px;
+}

@@ -1,0 +1,48 @@
+.one-rem {
+    font-size: 1rem;
+}
+
+.one-em {
+    font-size: 1em;
+}
+
+.three-em {
+    font-size: 3em;
+}
+
+.parent {
+    border: 2px solid black;
+    font-size: 30px;
+    width: 250px;
+    height: 210px;
+}
+
+.box {
+    border: 2px solid black;
+    background-color: blue;
+    color: white;
+    margin: 24px 0;
+}
+
+.fifty-vw {
+    width: 50vw;
+}
+
+.fifty-percent {
+    width: 50%;
+}
+
+.one-hundred-pixels {
+    width: 100px;
+}
+
+.twenty-vh {
+    width: 200px;
+    height: 20vh;
+}
+
+.box-parent {
+    border: 2px solid black;
+    width: 500px;
+    heigth: 350px;
+}
