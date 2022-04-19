@@ -3,21 +3,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    width: 55vw;
+    height: 60vh;
 }
 
 .main-container {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.box {
-    border: 1px solid blueviolet;
-    width: 150px;
-    height: 100px;
-    padding: 24px;
-    font-size: 30px;
-    font-weight: 500;
+.main-container .box {
+   background-color: aliceblue;
+   width: 100px;
+   margin: 10px;
+   text-align: center;
+   line-height: 75px;   
+   font-size: 30px;
+   border: 2px solid black;
 }
