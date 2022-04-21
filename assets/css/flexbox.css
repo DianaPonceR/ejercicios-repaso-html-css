@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 55vw;
+    width: 100vw;
     height: 60vh;
 }
 
@@ -11,14 +11,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 10px;
+    width: 100vw;
 }
 
 .main-container .box {
    background-color: aliceblue;
-   width: 100px;
-   margin: 10px;
+   width: 11%;
+   /*margin: 10px;*/
    text-align: center;
    line-height: 75px;   
    font-size: 30px;
    border: 2px solid black;
+   min-width: 100px;
 }
