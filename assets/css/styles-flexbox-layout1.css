@@ -78,52 +78,11 @@
     
 }
 
-.container1 .box{
+.box{
     background-color:aliceblue;
     width: 100px;
     text-align: center;
     font-size: 30px;
     border: 1px solid black;
-}
-
-.container2 .box{
-    background-color:aliceblue;
-    width: 100px;
-    text-align: center;
-    font-size: 30px;
-    border: 1px solid black;
-}   
-
-.container3 .box{
-    background-color:aliceblue;
-    width: 100px;
-    text-align: center;
-    font-size: 30px;
-    border: 1px solid black;
-}
-.container4 .boxContainer .box{
-    background-color:aliceblue;
-    width: 100px;
-    text-align: center;
-    font-size: 30px;
-    border: 1px solid black;
-}
-
-.container5 .box{
-    background-color:aliceblue;
-    width: 100px;
-    text-align: center;
-    font-size: 30px;
-    border: 1px solid black;
-}
-
-.container6 .box{
-    background-color:aliceblue;
-    width: 100px;
-    text-align: center;
-    font-size: 30px;
-    border: 1px solid black;
-}
-
-    
+}  
     
