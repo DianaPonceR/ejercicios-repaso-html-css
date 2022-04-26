@@ -3,7 +3,6 @@
     flex-direction: column;
     width: 100vw;
     gap: 48px;
-    
 }
 
 .container1{
@@ -14,7 +13,7 @@
     height: 50px;
     width: 100vw;
     color: white;
-    font-size: 40px;  
+    font-size: 40px;   
 }
 
 .container2{
@@ -25,7 +24,8 @@
     width: 100vw;
     flex-direction: row;
     justify-content:center;
-    gap: 10px;    
+    gap: 48px;
+    align-items: center;    
 }
 
 .container3{
@@ -45,10 +45,11 @@
     background-color: white;
     height: auto;
     width: 100vw;
-    gap: 10px; 
+    gap: 48px; 
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 
 .box{
@@ -58,7 +59,6 @@
     text-align: center;
     font-size: 30px;
     border: 1px solid black;
-    flex-wrap: wrap;
 } 
 
 .container5{
@@ -71,6 +71,4 @@
     flex-direction: column;
     justify-content:flex-end;
     flex-wrap: wrap;
-    
 }
-
