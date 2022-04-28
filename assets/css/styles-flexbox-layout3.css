@@ -1,62 +1,83 @@
 .flex-container{
     display: flex;
     flex-direction: column;
-    width: 100%; 
-    background-color: lightgrey;  
-    border: 10px solid olivedrab; 
+    width: 100vw;
     gap: 20px;
-    padding: 30px;
-    justify-items: center;
+    border: 5px solid green;
+    background-color: lightgray;
     justify-content: center;
-    
+    align-items: center;
+    padding: 10px;
 }
 
 .container1{
     display: flex;
-    justify-content: center;
-    border: 1px solid black;
-    background-color: rgb(23, 1, 51);
-    height: 150px;
+    background-color: white;
+    height: 100px;
     width: 100vw;
-    color: white;
-    font-size: 40px;   
+    justify-content: center;
     
 }
 
 .container2{
     display: flex;
-    justify-content: center;
+    border: 3px solid green;
     background-color: white;
-    height: auto;
+    height: 400px;
     width: 100vw;
-    flex-direction:row;
-    flex-wrap: wrap; 
-    background-color: lightgrey;  
-    border: 5px solid olivedrab; 
-    
+    justify-content: center;
     
 }
 
-.box-container{
+.sub-container1{
+    display: flex;
+    background-color:lightgray;
+    width: 50%;
+    height: auto;
+    border: 2px solid green;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.sub-container2{
+    display: flex;
+    background-color:lightgray;
+    width: 50%;
+    height: auto;
+    border: 2px solid green;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    
+}
+
+.box1{
+    background-color:aliceblue;
+    width: 100%;
+    height: 100%;
+}
+
+.box2{
+    background-color:aliceblue;
+    width: 100%;
+    height: 45%;
+}
+
+.container3{
     display: flex;
     background-color: white;
-    height: auto;
-    width: 100vw; 
-}
-.box-colum{
-    background-color:rgb(23, 1, 51);
-    width: 40%;
-    height: 400px;
-    font-size: 30px;
-    border: 1px solid black;
-    min-width: 250px;
-}
-.box-raw{
-    background-color:rgb(23, 1, 51);
-    width: 40%;
-    height: 400px;
-    font-size: 30px;
-    border: 1px solid black;
-    min-width: 250px;
+    height: 250px;
+    width: 100vw;
+    justify-content: center;
     
-} 
+}
+
+.container4{
+    display: flex;
+    background-color: white;
+    height: 80px;
+    width: 100vw;
+    justify-content: center;
+    
+}
