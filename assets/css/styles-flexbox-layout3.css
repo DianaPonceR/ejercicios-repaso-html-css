@@ -1,16 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 .flex-container{
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    gap: 20px;
-    border: 5px solid green;
     background-color: lightgray;
+    border: 5px solid green;
+    width: 100vw; 
+    /* 
+    gap: 20px;
+    
+    
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 10px; */
 }
 
-.container1{
+/* .container1{
     display: flex;
     background-color: white;
     height: 100px;
@@ -25,11 +33,12 @@
     background-color: white;
     height: 400px;
     width: 100vw;
-    justify-content: center;
+    justify-content: center;  
+     
     
-}
+} */
 
-.sub-container1{
+/* .sub-container1{
     display: flex;
     background-color:lightgray;
     width: 50%;
@@ -45,12 +54,13 @@
     background-color:lightgray;
     width: 50%;
     height: auto;
+    flex-direction: column;
     border: 2px solid green;
     align-items: center;
     padding: 10px;
-    flex-wrap: wrap;
+    gap: 20px;
     
-}
+} */
 
 .box1{
     background-color:aliceblue;
@@ -61,10 +71,10 @@
 .box2{
     background-color:aliceblue;
     width: 100%;
-    height: 45%;
+    height: 50%;
 }
 
-.container3{
+/* .container3{
     display: flex;
     background-color: white;
     height: 250px;
@@ -80,4 +90,41 @@
     width: 100vw;
     justify-content: center;
     
+} */
+
+.flex-container .container{
+    display: flex;
+}
+
+.flex-container .header{
+    width: 100%;
+    height: 200px;
+}
+
+.flex-container .section{
+    width: 100%;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.flex-container .news{
+    width: 100%;
+    height: 200px;
+}
+
+.flex-container .footer{
+    width: 100%;
+    height: 150px;
+    border-top: 1px solid green;
+}
+
+.flex-container .section .sub-container{
+    background-color: lightgrey;
+    border: 2px solid green;
+    min-width: 350px;
+    flex-grow: 1;
+    gap: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
