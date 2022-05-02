@@ -1,3 +1,7 @@
+body{
+    width: 100vw;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -6,18 +10,17 @@
 .flex_container{
     display: flex;
     width: 100vw;
+    padding: 0 36px;
    
 }
 
 ul {
     display: flex;
-    background: #F4F4F4;
-    border: 1px solid #7C7C7C;
     list-style: none;
     width: 100%;
-    flex-direction: column;
-    gap: 10px;  
+    flex-direction: column;  
     flex-wrap: wrap;
+    background-color: #0000000d;
   }
   
   ul li{
@@ -25,6 +28,7 @@ ul {
     display: flex;
     justify-content:space-between;   
     flex-grow: 1;
+    border: 1px solid #0000000d;
   }
   
   a{
