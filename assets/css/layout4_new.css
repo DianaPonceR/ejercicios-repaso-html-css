@@ -18,29 +18,37 @@ ul{
     list-style: none;
     width: 100%;
     flex-direction: column;  
-    flex-wrap: wrap;
+    
     background-color: #ffffff;
 
-  }
-
-  ul li:nth-child(odd){
-      background: #0000000d;
-  }
-  
-  ul li:hover{
-      background: #0000000d;
-  }
+}
 
   ul li{
     flex-direction: row;
     display: flex;
     justify-content:space-between;   
-    flex-grow: 1;
+    flex-wrap: wrap;
     border: 1px solid #0000000d;
+    flex-grow: 1;
+    padding: 12px;
+    align-items: center;
     
-  }
+}
+
+input{
+    flex-grow: 1;
+}
   
   a{
     color: rgb(0, 0, 0);
     text-decoration: none;
-  }
+}
+
+  
+ul li:nth-child(odd){
+    background: #0000000d;
+}
+
+ul li:hover{
+    background: #0000000d;
+}
