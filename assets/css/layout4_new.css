@@ -9,7 +9,6 @@ body{
 
 .flex_container{
     display: flex;
-    width: 100vw;
     padding: 0 36px;
    
 }
@@ -32,6 +31,6 @@ ul {
   }
   
   a{
-    color: #333;
+    color: rgb(0, 0, 0);
     text-decoration: none;
   }
