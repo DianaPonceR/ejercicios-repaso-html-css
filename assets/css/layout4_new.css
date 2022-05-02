@@ -13,21 +13,31 @@ body{
    
 }
 
-ul {
+ul{
     display: flex;
     list-style: none;
     width: 100%;
     flex-direction: column;  
     flex-wrap: wrap;
-    background-color: #0000000d;
+    background-color: #ffffff;
+
+  }
+
+  ul li:nth-child(odd){
+      background: #0000000d;
   }
   
+  ul li:hover{
+      background: #0000000d;
+  }
+
   ul li{
     flex-direction: row;
     display: flex;
     justify-content:space-between;   
     flex-grow: 1;
     border: 1px solid #0000000d;
+    
   }
   
   a{
