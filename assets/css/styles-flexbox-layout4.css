@@ -1,44 +1,58 @@
-h1{
-    margin-top: 10px;
-    margin-left: 36px;
+body{
+    width: 100vw;
 }
 
-.flex-container{
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex_container{
     display: flex;
-    width: 100vw; 
-    padding: 20px 50px;
+    padding: 0 36px;
+   flex-direction: column;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    flex-direction: column;  
     
-    
-}
-
-.container{
-    display: flex;
-    height: 400px;
-    width: 50%;   
-}
-
-.sub-containerIn{
-    display: flex;
-    height: 11.1%;
-    width: 600px;
-    background-color: #0000000d ;
-    border: 1px solid silver;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.sub-containerPar{
-    display: flex;
-    height: 11.1%;
-    width: 600px;
     background-color: #ffffff;
-    border: 1px solid silver;
-    justify-content: space-between;
+
+}
+
+  ul li{
+    flex-direction: row;
+    display: flex;
+    justify-content:space-between;   
+    flex-wrap: wrap;
+    border: 1px solid #0000000d;
+    flex-grow: 1;
+    padding: 12px;
     align-items: center;
     
 }
 
+input{
+    flex-grow: 1;
+}
+  
+  a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
 
-.sub-containerPar:hover{
-    background-color: #0000000d;
+  
+ul li:nth-child(odd){
+    background: #0000000d;
+}
+
+ul li:hover{
+    background: #0000000d;
+}
+
+h1{
+    padding: 36px 0;
 }
