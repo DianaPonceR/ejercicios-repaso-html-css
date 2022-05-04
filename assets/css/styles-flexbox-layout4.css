@@ -10,7 +10,7 @@ body{
 .flex_container{
     display: flex;
     padding: 0 36px;
-   flex-direction: column;
+    flex-direction: column;
 }
 
 ul{
