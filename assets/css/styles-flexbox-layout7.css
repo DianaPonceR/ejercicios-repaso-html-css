@@ -99,7 +99,6 @@ h1{
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
-    margin: 12px;
     justify-content: center;
 }
 
@@ -110,8 +109,7 @@ h1{
     height: 150px;
     border-radius: 10px;
     background-color: #FC9432;
-    margin: 12px 80px 10px 12px;
-    flex-grow: 1    ;
+    margin: 12px 80px 12px 12px;
 }
 
 
