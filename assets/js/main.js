@@ -1,12 +1,13 @@
 const result= document.getElementById("result")
 const suma= document.getElementById("suma")
 const resta= document.getElementById("resta")
-
+const multi=document.getElementById("multi")
 
 
 
 
 let count= 0
+let rMulti
 
 suma.onclick = () => {
     count+= 1
@@ -26,3 +27,13 @@ resta.onclick=() =>{
     
 }
 
+multi.onclick=()=>{
+    rMulti= 5*8
+    resultM.innerHTML=rMulti
+    
+}
+
+divi.onclick=()=>{
+    rDiv= 9/3
+    resultD.innerHTML=rDiv
+}
