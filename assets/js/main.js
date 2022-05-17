@@ -10,7 +10,7 @@ let count= 0
 let rMulti
 
 suma.onclick = () => {
-    count+= 1
+    count+= 10
     console.log(count)
     result.innerHTML = count
 
