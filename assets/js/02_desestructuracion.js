@@ -1,17 +1,18 @@
 function saludo({nombre, apellido_paterno, apellido_materno}){
-    console.log(`Hola ${nombre} ${apellido_paterno} ${apellido_materno}`)
+    return `Hola ${nombre} ${apellido_paterno} ${apellido_materno}`
+
 }
 
 function obtener_edad({edad}){
-    console.log(`tu edad es: ${edad}`)
+    return `Tu edad es: ${edad}`
 }
 
 function obtener_telefono({telefono}){
-    console.log(`Tu Telefono es: ${telefono}`)
+    return `Tu Telefono es: ${telefono}`
 }
 
 function obtener_email({email}){
-    console.log(`Tu Email es : ${email}`)
+    return `Tu Email es : ${email}`
 }
 
 const person={
@@ -23,7 +24,7 @@ const person={
     telefono: "5566899030"
 }
 
-saludo(person);
-obtener_edad(person)
-obtener_email(person)
-obtener_telefono(person)
+console.log(saludo(person))
+console.log(obtener_edad(person))
+console.log(obtener_email(person))
+console.log(obtener_telefono(person))
