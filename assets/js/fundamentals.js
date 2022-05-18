@@ -30,19 +30,3 @@ console.log(videoGames.length) */
 
 const [a,e,c,d]= videoGames
 /* console.log(d) */
-
-function saludo({nombre, apellido_paterno, apellido_materno}){
-/*     const {nombre, apellido_paterno, apellido_materno}=person*/
-    console.log(`Hola ${nombre} ${apellido_paterno} ${apellido_materno}`)
-}
-
-const person={
-    nombre: "leo",
-    apellido_paterno: "garcia",
-    apellido_materno:"hinojosa",
-    edad: "23",
-    email: "leo.zmby@",
-    telefono: "5566899030"
-}
-
-saludo(person);
