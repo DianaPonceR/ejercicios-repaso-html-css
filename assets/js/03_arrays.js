@@ -9,8 +9,14 @@ console.log()
 
 
 for(let index=0; index < frutas.length; index++) {
-    console.log((index+1) +".-" + frutas[index])
-    
-    //console.log(`${index+1} .- ${frutas[index]}`)
+    //console.log((index+1) +".-" + frutas[index])
+    console.log(`${index+1} .- ${frutas[index]}`)
 
 }
+
+frutas.push("mango")
+frutas.push("granada")
+console.log(frutas)
+
+frutas.pop()
+console.log(frutas)
