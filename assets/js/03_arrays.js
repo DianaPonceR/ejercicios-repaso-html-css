@@ -32,5 +32,7 @@ const copia= videoGames.slice(0,4)
 //copia.push("golf")
 console.log(videoGames)
 console.log(copia)
-
 const juegosDeMesa=["monopili","turista","elraton","uno"]
+
+const escritorio = videoGames.concat(juegosDeMesa)
+console.log(escritorio)
