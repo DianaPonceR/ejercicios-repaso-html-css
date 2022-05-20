@@ -16,6 +16,9 @@ for(let index=0; index < frutas.length; index++) {
 
 frutas.push("mango")
 frutas.push("granada")
+frutas.unshift("papa")
+console.log(frutas)
+frutas.shift()
 console.log(frutas)
 frutas.pop()
 console.log(frutas)
@@ -25,4 +28,9 @@ const videoGames= ["mario","infamous","uncharted","mariokart"]
 const [mario, , uncharted]= videoGames
 console.log(uncharted)
 
-console.log()
+const copia= videoGames.slice(0,4) 
+//copia.push("golf")
+console.log(videoGames)
+console.log(copia)
+
+const juegosDeMesa=["monopili","turista","elraton","uno"]
