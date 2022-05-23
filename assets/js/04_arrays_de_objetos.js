@@ -1201,14 +1201,14 @@ const todos= [
     }
   ]
 
-  console.log(todos.length)
+ for(let i=0; i<todos.length; i++){
+      // console.log(`${todos[i].userId} ${todos[i].id} ${todos[i].title} ${todos[i].completed}`)
+      const {userId,id,title,complete}= todos
+      const impTarea2= tarea2(todos[i])
+      console.log(impTarea2)    
 
-  //todo: Imprimir cada uno de los objetos en la consola (TODO)
-  //usar desestructuración para imprimir: El titulo de la traea es:   y    Le pertenece al user id: 
+} 
 
-  /*
-    El título de la tarea es "delectus aut autem" y le pertenece al usuario: 1
-    El título de la tarea es "quis ut nam facilis et officia qui" y le pertenece al usuario: 2
-    ...
-
-*/
+function tarea2({title, userId}){
+  return `El titulo de la tarea es: ${title} y le pertence a user id: ${userId}`
+}

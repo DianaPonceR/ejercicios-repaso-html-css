@@ -25,8 +25,8 @@ console.log(`nombre completo: ${person.nombre} ${person.apellido_paterno} ${pers
  */// console.log(`Nombre Completo: ${nombre} ${apellido_paterno} ${apellido_materno} ${telefono}`)
 
 const videoGames= ["mario","infamous","uncharted","mariokart"] 
-/* console.log(videoGames[2])
-console.log(videoGames.length) */
+console.log(videoGames[2])
+console.log(videoGames.length) 
 
 const [a,e,c,d]= videoGames
-/* console.log(d) */
+console.log(d)
