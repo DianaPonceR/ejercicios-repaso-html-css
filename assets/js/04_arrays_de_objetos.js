@@ -1201,6 +1201,9 @@ const todos= [
     }
   ]
 
+
+
+const ul= document.createElement("ul")
 function show(arr){
   const app = document.getElementById('app') 
   console.log(app)
@@ -1210,20 +1213,23 @@ function show(arr){
   }
 }
 
-function tarea2({title, userId}){
-  return `El titulo de la tarea es: ${title} y le pertence a user id: ${userId}`
+function imprimirLista(arr){
+  const app = document.getElementById('app') 
+  for(let i=0; i<arr.length; i++){
+    const li = document.createElement("li")
+    li.innerHTML = tarea2(arr[i])
+    ul.appendChild(li)
 
+  }
+}
+
+
+
+function tarea2({title, userId}){
+  return `El titulo de la tarea es: ${title} y le pertence a user id: ${userId} `
 } 
 
-show(todos)  
+app.appendChild(ul)
+// show(todos)
+imprimirLista(todos)
 
-
-/* TODO:   Tocar el dom con html y css */
-
-  /* for(let i=0; i<todos.length; i++){
-    //console.log(`${todos[i].userId} ${todos[i].id} ${todos[i].title} ${todos[i].completed}`)
-    //const {userId,id,title,complete}= todos
-    const impTarea2= tarea2(todos[i])
-    console.log(impTarea2)    
-  
-  } */
