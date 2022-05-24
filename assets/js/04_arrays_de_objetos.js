@@ -1201,14 +1201,29 @@ const todos= [
     }
   ]
 
- for(let i=0; i<todos.length; i++){
-      // console.log(`${todos[i].userId} ${todos[i].id} ${todos[i].title} ${todos[i].completed}`)
-      const {userId,id,title,complete}= todos
-      const impTarea2= tarea2(todos[i])
-      console.log(impTarea2)    
-
-} 
+function show(arr){
+  const app = document.getElementById('app') 
+  console.log(app)
+  for(let i=0; i<arr.length; i++){
+    const impTarea2= tarea2(arr[i])
+    app.append(impTarea2) 
+  }
+}
 
 function tarea2({title, userId}){
   return `El titulo de la tarea es: ${title} y le pertence a user id: ${userId}`
-}
+
+} 
+
+show(todos)  
+
+
+/* TODO:   Tocar el dom con html y css */
+
+  /* for(let i=0; i<todos.length; i++){
+    //console.log(`${todos[i].userId} ${todos[i].id} ${todos[i].title} ${todos[i].completed}`)
+    //const {userId,id,title,complete}= todos
+    const impTarea2= tarea2(todos[i])
+    console.log(impTarea2)    
+  
+  } */
