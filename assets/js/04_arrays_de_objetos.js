@@ -1203,7 +1203,6 @@ const todos= [
 
 
 
-const ul= document.createElement("ul")
 function show(arr){
   const app = document.getElementById('app') 
   console.log(app)
@@ -1215,21 +1214,34 @@ function show(arr){
 
 function imprimirLista(arr){
   const app = document.getElementById('app') 
+  const ul= document.createElement("ul")
   for(let i=0; i<arr.length; i++){
     const li = document.createElement("li")
     li.innerHTML = tarea2(arr[i])
     ul.appendChild(li)
 
   }
+  app.appendChild(ul)
 }
-
-
 
 function tarea2({title, userId}){
   return `El titulo de la tarea es: ${title} y le pertence a user id: ${userId} `
 } 
 
-app.appendChild(ul)
+
+
 // show(todos)
 imprimirLista(todos)
 
+
+/* 
+TODO: 
+
+1.- IMPRIMIR EN FORMATO DE LISTA: 
+2.- CREAR UNA FUNCIÓN EN LA QUE SE FILTREN LOS "TODOS" POR TODOS AQUELLOS QUE NO FUERON COMPLETADOS(SOLO IMPRIMIR COMPLETED FALSE):
+    QUE DIGA: TITULO DE TAREA+ A QUIEN LE PERTENECE + ESTAUS DE COMPLETADO 
+
+    requerimentos:
+    NOMBRE DE LA FUNCION: todosIncompletas
+
+*/
