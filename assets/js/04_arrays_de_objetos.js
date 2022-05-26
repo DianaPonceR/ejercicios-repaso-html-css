@@ -1205,9 +1205,9 @@ const todos= [
 
 function show(arr){
   const app = document.getElementById('app') 
-  console.log(app)
+  // console.log(app)
   for(let i=0; i<arr.length; i++){
-    const impTarea2= tarea2(arr[i])
+    const impTarea2= tarea1(arr[i])
     app.append(impTarea2) 
   }
 }
@@ -1217,21 +1217,49 @@ function imprimirLista(arr){
   const ul= document.createElement("ul")
   for(let i=0; i<arr.length; i++){
     const li = document.createElement("li")
-    li.innerHTML = tarea2(arr[i])
+    li.innerHTML = tarea1(arr[i])
     ul.appendChild(li)
 
   }
   app.appendChild(ul)
 }
 
-function tarea2({title, userId}){
-  return `El titulo de la tarea es: ${title} y le pertence a user id: ${userId} `
+function tarea1({title, userId}){
+  return `El titulo: ${title} Numero de Usuario: ${userId}`;
 } 
 
+/* imprimirLista(todos)
+show(todos) */
 
 
-// show(todos)
-imprimirLista(todos)
+//--------------------------------------------------------------------------------------
+
+function tareasIncompletas(arr2){
+  const tarea = document.getElementById('tarea') 
+  const ol= document.createElement("ol")
+  
+  for(let i=0; i<arr2.length; i++){
+    if(todos[i].completed==false) {
+      if(todos[i].title== "delectus aut autem"){
+        const li = document.createElement("li")
+        li.innerHTML=tarea2(arr2[i]) 
+        ol.appendChild(li)
+
+      }
+    } 
+  }
+  tarea.appendChild(ol)
+}
+
+function tarea2({title, userId, completed}){
+  return `El titulo: ${title}
+  Usuario: ${userId}
+  Estatus: ${completed}`
+}
+
+tareasIncompletas(todos)
+
+
 
 
 /* 
