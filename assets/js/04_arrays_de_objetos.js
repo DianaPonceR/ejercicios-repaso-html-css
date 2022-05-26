@@ -1201,6 +1201,8 @@ const todos= [
     }
   ]
 
+const movies =[]
+
 
 
 function show(arr){
@@ -1240,12 +1242,9 @@ function tareasIncompletas(arr2){
   
   for(let i=0; i<arr2.length; i++){
     if(todos[i].completed==false) {
-      if(todos[i].title== "delectus aut autem"){
-        const li = document.createElement("li")
-        li.innerHTML=tarea2(arr2[i]) 
-        ol.appendChild(li)
-
-      }
+      const li = document.createElement("li")
+      li.innerHTML=tarea2(arr2[i]) 
+      ol.appendChild(li)
     } 
   }
   tarea.appendChild(ol)
@@ -1265,11 +1264,9 @@ tareasIncompletas(todos)
 /* 
 TODO: 
 
-1.- IMPRIMIR EN FORMATO DE LISTA: 
-2.- CREAR UNA FUNCIÓN EN LA QUE SE FILTREN LOS "TODOS" POR TODOS AQUELLOS QUE NO FUERON COMPLETADOS(SOLO IMPRIMIR COMPLETED FALSE):
-    QUE DIGA: TITULO DE TAREA+ A QUIEN LE PERTENECE + ESTAUS DE COMPLETADO 
+1.- evaluar cuando el array este vacio y que imprima.
+        ----No hay info disponible---
 
-    requerimentos:
-    NOMBRE DE LA FUNCION: todosIncompletas
+
 
 */
