@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    display: flex;
+    background-color:aliceblue;
+    width: 49%;
+    height: 49%;
+    font-size: 30px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+}  
+
+/* .btn{
+    background-color: transparent ;
+     padding: 24px;
+    border-radius: 10%;
+     border: 1px solid #7dbbf1;
+} */

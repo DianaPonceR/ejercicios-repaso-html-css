@@ -1256,7 +1256,21 @@ function tarea2({title, userId, completed}){
   Estatus: ${completed}`
 }
 
-tareasIncompletas(todos)
+// tareasIncompletas(todos)
+
+//---------------------------------------------------------
+
+vacio.onclick=()=>{
+if (movies.length == 0) { 
+  const vacio = document.getElementById('vacio')
+  const h1 = document.createElement('h1')
+  h1.innerHTML = 'No hay Información disponible '
+  const tarea3 = document.getElementById("vacio")
+  tarea3.appendChild(h1)
+}
+}
+
+
 
 
 
@@ -1268,5 +1282,11 @@ TODO:
         ----No hay info disponible---
 
 
+
+*/
+
+
+/* 
+cambie fondo de cada cuadro
 
 */
