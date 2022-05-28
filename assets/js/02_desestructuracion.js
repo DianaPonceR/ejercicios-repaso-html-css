@@ -16,12 +16,12 @@ function obtener_email({email}){
 }
 
 const person={
-    nombre: "leo",
-    apellido_paterno: "garcia",
-    apellido_materno:"hinojosa",
-    edad: "23",
-    email: "leo.zmby@",
-    telefono: "5566899030"
+    nombre: "XXXXXXXXXXXXXXXXXXXX",
+    apellido_paterno: "XXXXXXXXXXXXXXXXXXX",
+    apellido_materno:"XXXXXXXXXXXXXXXXXXXX",
+    edad: "xx",
+    email: "XXXXXXXXXXXXXXXXXX",
+    telefono: "XXXXXXXXXXXXXXXXXXXX"
 }
 
 console.log(saludo(person))

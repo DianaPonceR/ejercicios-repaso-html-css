@@ -8,6 +8,8 @@
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
 }
 
 .box{
@@ -16,7 +18,8 @@
     width: 49%;
     height: 49%;
     font-size: 30px;
-    border: 1px solid black;
+    gap: 10px;
+    border: 1px solid rgb(101, 255, 240);
     align-items: center;
     justify-content: center;
 }  
@@ -28,3 +31,11 @@
     border-radius: 17px;
     border: 2px double black;
 }
+
+
+
+/* 
+TODOS.
+    1.-crear un layout en el que se pueda ver 
+
+*/

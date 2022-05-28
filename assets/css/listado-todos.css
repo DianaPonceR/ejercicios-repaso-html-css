@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.flexContainer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+    background-color: silver;
+    align-items: center;
+    min-width: 350px;
+}
+
+
+
+.itemsContainer{
+    margin: 12px;
+    display: flex;
+    border: 1px solid black;
+    background-color: white;
+    height: 200px;
+    width: 100%;
+    gap: 12px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6px; 
+    flex-wrap: wrap;
+    min-width: 300px;
+    
+}
+
+
+.idTarea {
+    display: flex;
+    background-color: whitesmoke;
+    flex-grow: 1;
+    height:auto;
+    border: 1px solid black;
+    min-width: 50px;
+    
+}
+
+.title{
+    display: flex;
+    background-color: whitesmoke;
+    flex-grow: 9;
+    height: auto;
+    border: 1px solid black;
+    min-width: 250px;
+    
+}
+
+.boton{
+    display: flex;
+    background-color: whitesmoke;
+    flex-grow: 1;
+    height:auto;
+    border: 1px solid black;
+    min-width: 50px;
+    
+}
+
+.subItemsContainer{
+    display: flex;
+    background-color: whitesmoke;
+    flex-grow: 5;
+    height: auto;
+    border: 1px solid black;
+    justify-items: c;
+    justify-content: space-between;
+    flex-direction: column;
+    min-width: 250px;
+
+}
+
+.userId{
+    display: flex;
+    background-color: whitesmoke;
+    width: auto;
+    height: 45%;
+    border: 1px solid black;
+    
+}
+
+.booleano{
+    display: flex;
+    background-color: whitesmoke;
+    width: auto;
+    height: 45%;
+    border: 1px solid black;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+.true{
+    display: flex;
+    background-color: whitesmoke;
+    width: 45%;
+    height:auto;
+    border: 1px solid black;
+    
+}
+
+.false{
+    display: flex;
+    background-color: whitesmoke;
+    width: 45%;
+    height:auto;
+    border: 1px solid black;
+    
+}
+
+
