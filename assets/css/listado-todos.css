@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    width: 100vw;
+    width: auto;
     height: auto;
     background-color: silver;
     align-items: center;
@@ -30,7 +30,6 @@
     padding: 6px; 
     flex-wrap: wrap;
     min-width: 300px;
-    
 }
 
 
@@ -40,8 +39,7 @@
     flex-grow: 1;
     height:auto;
     border: 1px solid black;
-    min-width: 50px;
-    
+    min-width: 50px;  
 }
 
 .title{
@@ -50,8 +48,7 @@
     flex-grow: 9;
     height: auto;
     border: 1px solid black;
-    min-width: 250px;
-    
+    min-width: 250px;  
 }
 
 .boton{
@@ -60,8 +57,7 @@
     flex-grow: 1;
     height:auto;
     border: 1px solid black;
-    min-width: 50px;
-    
+    min-width: 50px; 
 }
 
 .subItemsContainer{
@@ -74,7 +70,6 @@
     justify-content: space-between;
     flex-direction: column;
     min-width: 250px;
-
 }
 
 .userId{
@@ -83,7 +78,6 @@
     width: auto;
     height: 45%;
     border: 1px solid black;
-    
 }
 
 .booleano{
@@ -101,8 +95,7 @@
     background-color: whitesmoke;
     width: 45%;
     height:auto;
-    border: 1px solid black;
-    
+    border: 1px solid black;  
 }
 
 .false{
@@ -110,8 +103,5 @@
     background-color: whitesmoke;
     width: 45%;
     height:auto;
-    border: 1px solid black;
-    
+    border: 1px solid black;  
 }
-
-
