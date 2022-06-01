@@ -1,6 +1,4 @@
- 
-
-(() => {
+// (() => {
     const todos= [
         {
           "userId": 1,
@@ -1206,18 +1204,20 @@
     
     const flexContainer = document.getElementById("flexContainer")
     
+    
     for(let todo of todos){
         // console.log(todo)
+        
+
         const itemsContainer= document.createElement("div")
         const idTarea= document.createElement("div")
         const title= document.createElement("div")
-        const boton= document.createElement("div")
+        const boton= document.createElement("button")
         const subItemsContainer= document.createElement("div")
         const userId = document.createElement("div")
         const booleano = document.createElement("div")
         const booleanoTrue = document.createElement("div")
         const booleanoFalse = document.createElement("div")
-    
     
         itemsContainer.className = "itemsContainer"
         idTarea.className = "idTarea"
@@ -1229,19 +1229,66 @@
         booleanoTrue.className = "booleanoTrue"
         booleanoFalse.className = "booleanoFalse"
     
-    
-    
-    
+        //idTareas
+        idTarea.innerHTML = todo.id
+        itemsContainer.appendChild(idTarea)
+      
+        //TItulos
         console.log(title)
-        const h1 = document.createElement("h1")
-        h1.innerHTML= todo.title
-        title.appendChild(h1)
+        const h2 = document.createElement("h2")
+        h2.innerHTML= todo.title
+        title.appendChild(h2)
         itemsContainer.appendChild(title)
+
+        //boton
+        
+        
+        itemsContainer.appendChild(boton)
+        
+        /* boton.onclick = () => {
+          const booleanoTrue = document.getElementsByClassName("booleanoTrue")
+          booleanoTrue.style.background = "green"
+          
+        } */
+
+        //userId
+        userId.innerHTML = todo.userId
+        subItemsContainer.appendChild(userId)
+        
+
+         //Semaforo
+         
+    
+
+        if(todo.completed == true){
+          booleanoTrue.innerHTML = todo.completed
+          booleano.appendChild(booleanoTrue)
+          booleanoFalse.innerHTML = ""
+          booleanoFalse.style.height = "26px"
+          booleano.appendChild(booleanoFalse)
+
+          // booleanoTrue.innerHTML = todo.booleano
+        } else{
+          booleanoFalse.innerHTML = todo.completed
+          booleano.appendChild(booleanoFalse)
+          booleanoTrue.innerHTML = ""
+          booleanoTrue.style.height = "26px"
+          booleano.appendChild(booleanoTrue)
+          // booleanoFalse.innerHTML = todo.booleano
+        }
+        subItemsContainer.appendChild(booleano)
+
+        
+      
+        //conexcion de Contenedores
+        // subItemsContainer.appendChild(userId)
+        itemsContainer.appendChild(subItemsContainer)
         flexContainer.appendChild(itemsContainer)
+        
     }
+  
 
-
-} )();
+// } )();
 
 
 

@@ -22,7 +22,7 @@
     display: flex;
     border: 1px solid black;
     background-color: white;
-    height: 200px;
+    height: auto;
     width: 100%;
     gap: 12px;
     flex-direction: row;
@@ -30,6 +30,7 @@
     padding: 6px; 
     flex-wrap: wrap;
     min-width: 300px;
+    
 }
 
 
@@ -40,6 +41,8 @@
     height:auto;
     border: 1px solid black;
     min-width: 50px;  
+    align-items: center;
+    justify-content: center;
 }
 
 .title{
@@ -49,6 +52,8 @@
     height: auto;
     border: 1px solid black;
     min-width: 250px;  
+    align-items: center;
+    justify-content: center;
 }
 
 .boton{
@@ -78,30 +83,36 @@
     width: auto;
     height: 45%;
     border: 1px solid black;
+    align-items: center;
+    justify-content: center;
 }
 
 .booleano{
     display: flex;
     background-color: whitesmoke;
     width: auto;
-    height: 45%;
+    height: auto;
     border: 1px solid black;
     justify-content: space-between;
     padding: 6px;
+    align-items: center;
+    
 }
 
-.true{
+.booleanoTrue{
+    display: flex;
+    background-color: whitesmoke;
+    width: 45%;
+    height:auto;
+    border: 1px solid black; 
+    justify-content: center;
+}
+
+.booleanoFalse{
     display: flex;
     background-color: whitesmoke;
     width: 45%;
     height:auto;
     border: 1px solid black;  
-}
-
-.false{
-    display: flex;
-    background-color: whitesmoke;
-    width: 45%;
-    height:auto;
-    border: 1px solid black;  
+    justify-content: center;
 }
