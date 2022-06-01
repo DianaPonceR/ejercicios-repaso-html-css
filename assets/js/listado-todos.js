@@ -1245,11 +1245,13 @@
         boton.innerHTML = "DONE"
         itemsContainer.appendChild(boton)
         
-        /* boton.onclick = () => {
-          const booleanoTrue = document.getElementsByClassName("booleanoTrue")
+        boton.onclick = () => {
           booleanoTrue.style.background = "green"
+          booleanoFalse.innerHTML = ""
+          booleanoFalse.style.height = "26px"
           
-        } */
+          
+        }
 
         //userId
         userId.innerHTML = todo.userId
