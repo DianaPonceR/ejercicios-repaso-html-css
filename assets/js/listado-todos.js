@@ -1242,7 +1242,7 @@
 
         //boton
         
-        
+        boton.innerHTML = "DONE"
         itemsContainer.appendChild(boton)
         
         /* boton.onclick = () => {
@@ -1269,11 +1269,12 @@
 
           // booleanoTrue.innerHTML = todo.booleano
         } else{
-          booleanoFalse.innerHTML = todo.completed
-          booleano.appendChild(booleanoFalse)
           booleanoTrue.innerHTML = ""
           booleanoTrue.style.height = "26px"
           booleano.appendChild(booleanoTrue)
+          booleanoFalse.innerHTML = todo.completed
+          booleano.appendChild(booleanoFalse)
+          
           // booleanoFalse.innerHTML = todo.booleano
         }
         subItemsContainer.appendChild(booleano)
