@@ -1206,9 +1206,6 @@
     
     
     for(let todo of todos){
-        // console.log(todo)
-        
-
         const itemsContainer= document.createElement("div")
         const idTarea= document.createElement("div")
         const title= document.createElement("div")
@@ -1248,10 +1245,10 @@
         boton.onclick = () => {
           booleanoTrue.style.background = "green"
           booleanoFalse.innerHTML = ""
-          booleanoFalse.style.height = "26px"
-          
-          
+          booleanoFalse.style.height = "26px"  
         }
+
+        
 
         //userId
         userId.innerHTML = todo.userId
@@ -1262,7 +1259,7 @@
          
     
 
-        if(todo.completed == true){
+        if(todo.completed == true ){
           booleanoTrue.innerHTML = todo.completed
           booleano.appendChild(booleanoTrue)
           booleanoFalse.innerHTML = ""
@@ -1276,6 +1273,14 @@
           booleano.appendChild(booleanoTrue)
           booleanoFalse.innerHTML = todo.completed
           booleano.appendChild(booleanoFalse)
+
+          boton.onclick = () => {
+            booleanoFalse.style.background = "red"
+            booleanoTrue.innerHTML = ""
+            booleanoFalse.innerHTML = ''
+            booleanoTrue.style.height = "26px"  
+            booleanoFalse.style.height = '26px'
+          }
           
           // booleanoFalse.innerHTML = todo.booleano
         }
@@ -1292,15 +1297,6 @@
   
 
 // } )();
-
-
-
-
-
-
-
-
-
 // console.log(title)
 // console.log(todos[12].title)
 // title.innerHTML= todos[12].title
@@ -1308,8 +1304,6 @@
 /* const h1 = document.createElement("h1")
 h1.innerHTML= todos[12].title
 title.appendChild(h1) */
-
-
 /* console.log(todos.length)
 for(let i=0; i<todos.length; i++ ){
     console.log(i)
