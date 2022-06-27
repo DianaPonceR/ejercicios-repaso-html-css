@@ -1246,6 +1246,8 @@
           booleanoTrue.style.background = "green"
           booleanoFalse.innerHTML = ""
           booleanoFalse.style.height = "26px"  
+          booleanoTrue.innerHTML = ""
+          booleanoTrue.style.height = "26px"
         }
 
         
@@ -1280,8 +1282,7 @@
             booleanoFalse.innerHTML = ''
             booleanoTrue.style.height = "26px"  
             booleanoFalse.style.height = '26px'
-          }
-          
+          }  
           // booleanoFalse.innerHTML = todo.booleano
         }
         subItemsContainer.appendChild(booleano)
